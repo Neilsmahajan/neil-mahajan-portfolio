@@ -34,62 +34,67 @@ export default function CustomAIChatbotPage() {
   return (
     <div className="container py-12">
       <div className="flex flex-col gap-6">
-        <div>
-          <div className="flex items-center gap-2 mb-2">
-            <Badge variant="outline" className="text-xs">
-              Capstone Project
-            </Badge>
-            <Badge variant="outline" className="text-xs flex items-center">
-              <Users className="mr-1 h-3 w-3" /> Team Project
-            </Badge>
-          </div>
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
-            Custom AI Chatbot Avatar WordPress Plugin
-          </h1>
-          <p className="text-muted-foreground max-w-[800px] mb-6">
-            A service that quickly creates customized conversational AI chatbots
-            for clients, including personalized knowledge bases, predefined
-            questions, and multilingual support.
-          </p>
-          <div className="flex flex-wrap gap-3 mb-8">
-            {technologies.map((tech) => (
-              <Badge key={tech} variant="secondary">
-                {tech}
+        {/* Hero section with responsive layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          {/* Project info */}
+          <div>
+            <div className="flex items-center gap-2 mb-2">
+              <Badge variant="outline" className="text-xs">
+                Capstone Project
               </Badge>
-            ))}
+              <Badge variant="outline" className="text-xs flex items-center">
+                <Users className="mr-1 h-3 w-3" /> Team Project
+              </Badge>
+            </div>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+              Custom AI Chatbot Avatar WordPress Plugin
+            </h1>
+            <p className="text-muted-foreground max-w-[800px] mb-6">
+              A service that quickly creates customized conversational AI
+              chatbots for clients, including personalized knowledge bases,
+              predefined questions, and multilingual support.
+            </p>
+            <div className="flex flex-wrap gap-3 mb-8">
+              {technologies.map((tech) => (
+                <Badge key={tech} variant="secondary">
+                  {tech}
+                </Badge>
+              ))}
+            </div>
+            <div className="flex flex-wrap gap-4 mb-8">
+              <Button asChild>
+                <Link
+                  href="https://createcustomchatbotplugin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                  Live Demo
+                </Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link
+                  href="https://github.com/Neilsmahajan/create-custom-chatbot-avatar-wordpress-plugin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="ml-2 h-4 w-4" />
+                  GitHub
+                </Link>
+              </Button>
+            </div>
           </div>
-          <div className="flex flex-wrap gap-4 mb-8">
-            <Button asChild>
-              <Link
-                href="https://createcustomchatbotplugin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <ExternalLink className="ml-2 h-4 w-4" />
-                Live Demo
-              </Link>
-            </Button>
-            <Button variant="outline" asChild>
-              <Link
-                href="https://github.com/Neilsmahajan/create-custom-chatbot-avatar-wordpress-plugin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="ml-2 h-4 w-4" />
-                GitHub
-              </Link>
-            </Button>
-          </div>
-        </div>
 
-        <div className="relative w-full h-[400px] rounded-lg overflow-hidden mb-8">
-          <Image
-            src="/placeholder.svg?height=800&width=1200"
-            alt="Custom AI Chatbot Avatar WordPress Plugin"
-            fill
-            className="object-cover"
-            priority
-          />
+          {/* Hero image */}
+          <div className="relative w-full h-[350px] rounded-lg overflow-hidden">
+            <Image
+              src="/Create Custom Chatbot Plugin Male French Chatbot Screenshot.png"
+              alt="Custom AI Chatbot Avatar WordPress Plugin - Male French Chatbot"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
         </div>
 
         <Card className="mb-8">
@@ -236,29 +241,29 @@ export default function CustomAIChatbotPage() {
         <Card>
           <CardContent className="pt-6">
             <h2 className="text-2xl font-bold mb-4">Screenshots</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="relative w-full h-[200px] rounded-lg overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Create Custom Chatbot Plugin Home Page Screenshot.png"
                   alt="Create Custom Chatbot Plugin Home Page"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
-              <div className="relative w-full h-[200px] rounded-lg overflow-hidden">
+              <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Create Custom Chatbot Plugin Instructions Page Screenshot.png"
                   alt="Create Custom Chatbot Plugin Instructions Page"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
-              <div className="relative w-full h-[200px] rounded-lg overflow-hidden md:col-span-2">
+              <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=800"
-                  alt="Create Custom Chatbot Plugin Chatbot Screenshot"
+                  src="/Create Custom Chatbot Plugin Female English Chatbot Screenshot.png"
+                  alt="Create Custom Chatbot Plugin Female English Chatbot"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             </div>

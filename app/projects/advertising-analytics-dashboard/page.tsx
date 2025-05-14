@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ExternalLink, Github } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Advertising Analytics Dashboard | Neil Mahajan",
@@ -50,16 +51,18 @@ export default function AdvertisingAnalyticsDashboardPage() {
               href="https://advertisinganalyticsdashboard.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
+              className="flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
             >
+              <ExternalLink className="h-4 w-4" />
               Live Demo
             </Link>
             <Link
               href="https://github.com/Neilsmahajan/advertisinganalyticsdashboard"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium"
+              className="flex items-center gap-2 rounded-md border border-input bg-background px-4 py-2 text-sm font-medium"
             >
+              <Github className="h-4 w-4" />
               GitHub
             </Link>
           </div>

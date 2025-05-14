@@ -53,7 +53,8 @@ export default function MultiplatformVideoUploadPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live Demo <ExternalLink className="ml-2 h-4 w-4" />
+                <ExternalLink className="ml-2 h-4 w-4" />
+                Live Demo
               </Link>
             </Button>
             <Button variant="outline" asChild>
@@ -62,7 +63,8 @@ export default function MultiplatformVideoUploadPage() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub <Github className="ml-2 h-4 w-4" />
+                <Github className="ml-2 h-4 w-4" />
+                GitHub
               </Link>
             </Button>
           </div>

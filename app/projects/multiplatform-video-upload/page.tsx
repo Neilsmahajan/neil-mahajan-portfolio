@@ -28,56 +28,61 @@ export default function MultiplatformVideoUploadPage() {
   return (
     <div className="container py-12">
       <div className="flex flex-col gap-6">
-        <div>
-          <Badge variant="outline" className="text-xs mb-2">
-            Personal Project
-          </Badge>
-          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
-            Multiplatform Video Upload
-          </h1>
-          <p className="text-muted-foreground max-w-[800px] mb-6">
-            A Next.js 15 UI for OAuth-based one-click uploads of short-form
-            videos to YouTube Shorts, Instagram Reels, and TikTok.
-          </p>
-          <div className="flex flex-wrap gap-3 mb-8">
-            {technologies.map((tech) => (
-              <Badge key={tech} variant="secondary">
-                {tech}
-              </Badge>
-            ))}
+        {/* Hero section with responsive layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          {/* Project info */}
+          <div>
+            <Badge variant="outline" className="text-xs mb-2">
+              Personal Project
+            </Badge>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+              Multiplatform Video Upload
+            </h1>
+            <p className="text-muted-foreground max-w-[800px] mb-6">
+              A Next.js 15 UI for OAuth-based one-click uploads of short-form
+              videos to YouTube Shorts, Instagram Reels, and TikTok.
+            </p>
+            <div className="flex flex-wrap gap-3 mb-8">
+              {technologies.map((tech) => (
+                <Badge key={tech} variant="secondary">
+                  {tech}
+                </Badge>
+              ))}
+            </div>
+            <div className="flex flex-wrap gap-4 mb-8">
+              <Button asChild>
+                <Link
+                  href="https://multiplatformvideoupload.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                  Live Demo
+                </Link>
+              </Button>
+              <Button variant="outline" asChild>
+                <Link
+                  href="https://github.com/Neilsmahajan/multi-platform-video-upload"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="ml-2 h-4 w-4" />
+                  GitHub
+                </Link>
+              </Button>
+            </div>
           </div>
-          <div className="flex flex-wrap gap-4 mb-8">
-            <Button asChild>
-              <Link
-                href="https://multiplatformvideoupload.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <ExternalLink className="ml-2 h-4 w-4" />
-                Live Demo
-              </Link>
-            </Button>
-            <Button variant="outline" asChild>
-              <Link
-                href="https://github.com/Neilsmahajan/multi-platform-video-upload"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Github className="ml-2 h-4 w-4" />
-                GitHub
-              </Link>
-            </Button>
-          </div>
-        </div>
 
-        <div className="relative w-full h-[400px] rounded-lg overflow-hidden mb-8">
-          <Image
-            src="/placeholder.svg?height=800&width=1200"
-            alt="Multiplatform Video Upload"
-            fill
-            className="object-cover"
-            priority
-          />
+          {/* Hero image */}
+          <div className="relative w-full h-[350px] rounded-lg overflow-hidden">
+            <Image
+              src="/Multiplatform Video Upload Dashboard Page Screenshot.png"
+              alt="Multiplatform Video Upload Dashboard"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
         </div>
 
         <Card className="mb-8">
@@ -163,37 +168,37 @@ export default function MultiplatformVideoUploadPage() {
         <Card>
           <CardContent className="pt-6">
             <h2 className="text-2xl font-bold mb-4">Screenshots</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="relative w-full h-[200px] rounded-lg overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Multiplatform Video Upload Home Page Screenshot.png"
                   alt="Multiplatform Video Upload Home Page"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
-              <div className="relative w-full h-[200px] rounded-lg overflow-hidden">
+              <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Multiplatform Video Upload Dashboard Page Screenshot.png"
                   alt="Multiplatform Video Upload Dashboard Page"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
-              <div className="relative w-full h-[200px] rounded-lg overflow-hidden">
+              <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Multiplatform Video Upload Upload Page Screenshot.png"
                   alt="Multiplatform Video Upload Upload Page"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
-              <div className="relative w-full h-[200px] rounded-lg overflow-hidden">
+              <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/Multiplatform Video Upload Settings Page Screenshot.png"
                   alt="Multiplatform Video Upload Settings Page"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             </div>

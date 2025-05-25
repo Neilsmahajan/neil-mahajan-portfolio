@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -6,14 +7,25 @@ export default function Home() {
       {/* Hero Section */}
       <section className="w-full py-12 bg-muted/40">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center gap-4 text-center">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              Neil Mahajan
-            </h1>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl">
-              Software Engineer specializing in full-stack development, AI
-              integration, and cloud solutions.
-            </p>
+          <div className="flex flex-col items-center gap-6 text-center">
+            <div className="relative w-32 h-32 md:w-40 md:h-40">
+              <Image
+                src="/profile-circle-image.png"
+                alt="Neil Mahajan"
+                fill
+                className="object-cover rounded-full border-4 border-background shadow-lg"
+                priority
+              />
+            </div>
+            <div className="space-y-4">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Neil Mahajan
+              </h1>
+              <p className="max-w-[700px] text-muted-foreground md:text-xl">
+                Software Engineer specializing in full-stack development, AI
+                integration, and cloud solutions.
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <Link
                 href="/projects"

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "About | Neil Mahajan",
@@ -9,7 +10,29 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="container py-12">
-      <h1 className="text-3xl font-bold mb-8">About Me</h1>
+      <div className="flex flex-col md:flex-row gap-8 items-start mb-12">
+        <div className="flex-shrink-0">
+          <div className="relative w-48 h-48 md:w-56 md:h-56">
+            <Image
+              src="/profile-square-image.jpeg"
+              alt="Neil Mahajan"
+              fill
+              className="object-cover rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+        <div className="flex-grow">
+          <h1 className="text-3xl font-bold mb-4">About Me</h1>
+          <p className="text-muted-foreground text-lg leading-relaxed">
+            I&apos;m a Computer Science graduate from Arizona State University
+            (Barrett, The Honors College) with experience in full-stack
+            development, AI integration, and cloud solutions. Currently working
+            as an IT Solutions Engineer at Arizona Public Service, I&apos;m
+            passionate about creating innovative solutions that bridge
+            technology and real-world applications.
+          </p>
+        </div>
+      </div>
 
       {/* Education Section */}
       <section className="mb-12">

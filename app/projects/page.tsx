@@ -30,6 +30,13 @@ export default function ProjectsPage() {
       tags: ["Next.js", "React", "OAuth", "API Integration"],
       link: "/projects/multiplatform-video-upload",
     },
+    {
+      title: "Vocabulary Study Go CLI",
+      description:
+        "A command-line interface tool built with Go to help study and learn new vocabulary through interactive flashcard sessions with progress tracking and spaced repetition.",
+      tags: ["Go", "CLI", "Flashcards", "Progress Tracking", "JSON"],
+      link: "/projects/vocabulary-study-go-cli",
+    },
   ];
 
   return (

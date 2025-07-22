@@ -37,6 +37,13 @@ export default function ProjectsPage() {
       tags: ["Go", "CLI", "Flashcards", "Progress Tracking", "JSON"],
       link: "/projects/vocabulary-study-go-cli",
     },
+    {
+      title: "Terminal Snake Game in Go",
+      description:
+        "A high-performance, terminal-based Snake game implementation written in Go, showcasing advanced concurrency patterns, data structures, and clean architecture principles.",
+      tags: ["Go", "Goroutines", "Concurrency", "Terminal UI", "CLI"],
+      link: "/projects/snake",
+    },
   ];
 
   return (

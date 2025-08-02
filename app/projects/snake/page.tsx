@@ -97,7 +97,8 @@ export default function SnakeGamePage() {
                 <div className="text-blue-600">████████████████████████████████████████</div>
               </div>
               <div className="text-sm text-muted-foreground mt-4">
-                <span className="text-cyan-600">Controls:</span> W/K↑ S/J↓ A/H← D/L→ Q/ESC=Quit
+                <span className="text-cyan-600">Controls:</span> W/K↑ S/J↓ A/H←
+                D/L→ Q/ESC=Quit
               </div>
             </div>
           </div>
@@ -459,36 +460,109 @@ export default function SnakeGamePage() {
 
         <Card>
           <CardContent className="pt-6">
-            <h2 className="text-2xl font-bold mb-4">Game Screenshots</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <h3 className="text-lg font-medium">Game Configuration</h3>
-                <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
-                  <Image
-                    src="/Snake Game Inputting Board Size and Speed.png"
-                    alt="Snake Game - Board Size and Speed Configuration"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <p className="text-sm text-muted-foreground">
-                  Players can configure board size and game speed before
-                  starting
-                </p>
+            <h2 className="text-2xl font-bold mb-6">Game Screenshots</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {/* Game Screen */}
+              <div className="bg-muted/40 rounded-lg p-4">
+          <div className="flex items-center gap-2 mb-4">
+            <Terminal className="h-5 w-5" />
+            <span className="text-sm font-medium">Gameplay</span>
+          </div>
+          <div className="font-mono text-sm space-y-2 whitespace-pre">
+            <div className="text-green-600">🐍 SNAKE GAME 🐍</div>
+            <div>
+              <span className="text-cyan-600">Score: </span>
+              <span className="text-yellow-600">6</span>
+            </div>
+            <br />
+            <div className="space-y-0 leading-none">
+              <div className="text-blue-600">████████████████████████████████████████</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█           <span className="text-green-600">●●●●●●●</span>                    █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                            <span className="text-red-600">♦</span>         █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">█                                      █</div>
+              <div className="text-blue-600">████████████████████████████████████████</div>
+            </div>
+            <div className="text-sm text-muted-foreground mt-4">
+              <span className="text-cyan-600">Controls:</span> W/K↑ S/J↓ A/H← D/L→ Q/ESC=Quit
+            </div>
+          </div>
               </div>
-              <div className="space-y-2">
-                <h3 className="text-lg font-medium">Game End Screen</h3>
-                <div className="relative w-full h-[300px] rounded-lg overflow-hidden">
-                  <Image
-                    src="/Snake Game End Screen.png"
-                    alt="Snake Game - End Screen with Final Score"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <p className="text-sm text-muted-foreground">
-                  End screen showing final score and game board state
-                </p>
+
+              {/* Setup Screen */}
+              <div className="bg-muted/40 rounded-lg p-4">
+          <div className="flex items-center gap-2 mb-4">
+            <Terminal className="h-5 w-5" />
+            <span className="text-sm font-medium">Game Setup</span>
+          </div>
+          <div className="font-mono text-sm space-y-0 leading-none whitespace-pre">
+            <div className="text-green-600">╔══════════════════════════════════════╗</div>
+            <div className="text-green-600">║           🐍 SNAKE GAME 🐍           ║</div>
+            <div className="text-green-600">║       Written in Go Language         ║</div>
+            <div className="text-green-600">╚══════════════════════════════════════╝</div>
+          </div>
+          <div className="text-sm text-cyan-600 mt-3">Board Size Selection:</div>
+          <div className="font-mono text-sm space-y-0 leading-none whitespace-pre">
+            <span className="text-yellow-600">  [s]</span> - Small  (20x10) 📱<br />
+            <span className="text-yellow-600">  [m]</span> - Medium (40x20) 💻<br />
+            <span className="text-yellow-600">  [l]</span> - Large  (80x40) 🖥️<br />
+          </div>
+          <div className="text-sm text-muted-foreground mt-2">Enter your choice: <span className="font-medium">m</span></div>
+          <div className="text-sm text-green-600">✓ Medium board selected!</div>
+          <div className="text-sm text-cyan-600 mt-2">Speed Selection:</div>
+          <div className="font-mono text-sm space-y-0 leading-none whitespace-pre">
+            <span className="text-yellow-600">  [s]</span> - Slow   (200ms) 🐌<br />
+            <span className="text-yellow-600">  [m]</span> - Medium (100ms) 🚶<br />
+            <span className="text-yellow-600">  [l]</span> - Fast   (50ms)  🏃<br />
+          </div>
+          <div className="text-sm text-muted-foreground mt-2">Enter your choice: <span className="font-medium">m</span></div>
+          <div className="text-sm text-green-600">✓ Medium speed selected!</div>
+          <div className="text-sm text-muted-foreground mt-3">
+            Press <span className="font-medium text-green-600">Enter</span> to start...
+          </div>
+              </div>
+
+              {/* Game Over Screen */}
+              <div className="bg-muted/40 rounded-lg p-4">
+          <div className="flex items-center gap-2 mb-4">
+            <Terminal className="h-5 w-5" />
+            <span className="text-sm font-medium">Game Over</span>
+          </div>
+          <div className="font-mono text-sm space-y-0 leading-none whitespace-pre">
+            <div className="text-red-600">╔══════════════════════════════════════╗</div>
+            <div className="text-red-600">║               Game Over              ║</div>
+            <div className="text-red-600">╚══════════════════════════════════════╝</div>
+          </div>
+          <br />
+          <div className="text-sm text-yellow-600">🏆 Final Score: <span className="text-green-600">6</span></div>
+          <br />
+          <div className="text-sm text-pink-600">🎮 Keep trying! You'll get better! 🎮</div>
+          <br />
+          <div className="text-sm text-cyan-600">Thanks for playing Snake! 🐍</div>
+          <div className="text-sm text-muted-foreground mt-4">Press <span className="text-green-600">ENTER</span> to exit...</div>
+          
+          <div className="text-sm text-pink-600 mt-4">Game Controls:</div>
+          <div className="font-mono text-sm space-y-0 leading-none whitespace-pre text-xs">
+            <span className="text-blue-600">  ↑</span> Move Up:    <span className="text-yellow-600">W</span> or <span className="text-yellow-600">K</span><br />
+            <span className="text-blue-600">  ↓</span> Move Down:  <span className="text-yellow-600">S</span> or <span className="text-yellow-600">J</span><br />
+            <span className="text-blue-600">  ←</span> Move Left:  <span className="text-yellow-600">A</span> or <span className="text-yellow-600">H</span><br />
+            <span className="text-blue-600">  →</span> Move Right: <span className="text-yellow-600">D</span> or <span className="text-yellow-600">L</span><br />
+            <span className="text-blue-600">  🚪</span> Quit Game:  <span className="text-yellow-600">Q</span> or <span className="text-yellow-600">ESC</span>
+          </div>
               </div>
             </div>
           </CardContent>

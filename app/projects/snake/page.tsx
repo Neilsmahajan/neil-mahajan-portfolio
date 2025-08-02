@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Github, ExternalLink, Terminal, Code, Zap } from "lucide-react";
+import { Github, Terminal, Code, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Terminal Snake Game in Go | Neil Mahajan",
@@ -62,16 +62,44 @@ export default function SnakeGamePage() {
               </Button>
             </div>
           </div>
-
-          {/* Hero image */}
-          <div className="relative w-full h-[350px] rounded-lg overflow-hidden">
-            <Image
-              src="/Snake Game Inputting Board Size and Speed.png"
-              alt="Snake Game - Inputting Board Size and Speed Configuration"
-              fill
-              className="object-contain"
-              priority
-            />
+          <div className="relative w-full bg-muted/40 rounded-lg p-6">
+            <div className="flex items-center gap-2 mb-4">
+              <Terminal className="h-5 w-5" />
+              <span className="text-sm font-medium">Terminal</span>
+            </div>
+            <div className="font-mono text-sm space-y-2 whitespace-pre">
+              <div className="text-green-600">🐍 SNAKE GAME 🐍</div>
+              <div>
+                <span className="text-cyan-600">Score: </span>
+                <span className="text-yellow-600">6</span>
+              </div>
+              <br />
+              <div className="space-y-0 leading-none">
+                <div className="text-blue-600">████████████████████████████████████████</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█           <span className="text-green-600">●●●●●●●</span>                    █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                            <span className="text-red-600">♦</span>         █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">█                                      █</div>
+                <div className="text-blue-600">████████████████████████████████████████</div>
+              </div>
+              <div className="text-sm text-muted-foreground mt-4">
+                <span className="text-cyan-600">Controls:</span> W/K↑ S/J↓ A/H← D/L→ Q/ESC=Quit
+              </div>
+            </div>
           </div>
         </div>
 
@@ -177,7 +205,7 @@ export default function SnakeGamePage() {
                         // Non-blocking input handling with goroutines
                       </div>
                       <div>inputChannel := make(chan types.UserInput)</div>
-                      <div>stopChannel := make(chan struct{})</div>
+                      <div>stopChannel := make(chan struct{ })</div>
                       <div className="mt-2">
                         go func() {"{"}
                         <br />

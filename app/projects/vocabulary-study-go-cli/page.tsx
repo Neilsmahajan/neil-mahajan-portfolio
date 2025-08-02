@@ -30,6 +30,9 @@ export default function VocabularyStudyGoCliPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           {/* Project info */}
           <div>
+            <Badge variant="outline" className="text-xs mb-2">
+              Personal Project
+            </Badge>
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
               Vocabulary Study Go CLI
             </h1>
@@ -97,14 +100,16 @@ export default function VocabularyStudyGoCliPage() {
               The application implements spaced repetition principles by
               tracking which words users know and don&apos;t know, allowing them
               to focus on challenging vocabulary. With features like
-              customizable word lists, progress statistics, and various study
-              modes, it&apos;s an ideal tool for students, professionals, and
-              language learners.
+              customizable word lists, progress statistics, vocabulary
+              management commands, and various study modes, it&apos;s an ideal
+              tool for students, professionals, and language learners.
             </p>
             <p>
               The CLI tool stores vocabulary in JSON format and maintains user
               progress locally, making it lightweight and portable while
-              providing powerful learning capabilities.
+              providing powerful learning capabilities. Users can dynamically
+              add and remove words through command-line operations, making it
+              easy to customize their learning experience.
             </p>
           </CardContent>
         </Card>
@@ -131,6 +136,11 @@ export default function VocabularyStudyGoCliPage() {
                 the vocab.json file with definitions and example sentences.
               </li>
               <li>
+                <strong>Dynamic Word Management:</strong> Add new words or
+                remove existing ones directly from the command line with
+                comprehensive metadata support.
+              </li>
+              <li>
                 <strong>Study Statistics:</strong> Track your learning progress
                 with detailed statistics on known vs. unknown words.
               </li>
@@ -141,6 +151,15 @@ export default function VocabularyStudyGoCliPage() {
               <li>
                 <strong>Progress Reset:</strong> Start fresh at any time while
                 maintaining your vocabulary database.
+              </li>
+              <li>
+                <strong>Add New Words:</strong> Easily add custom words with
+                part of speech, definitions, and example sentences directly from
+                the command line.
+              </li>
+              <li>
+                <strong>Remove Words:</strong> Remove unwanted words from your
+                vocabulary database with a simple command.
               </li>
             </ul>
           </CardContent>
@@ -199,6 +218,28 @@ export default function VocabularyStudyGoCliPage() {
                   <div>$ ./vocab-cli --help</div>
                 </div>
               </div>
+
+              <div>
+                <h3 className="text-lg font-medium mb-3">
+                  Vocabulary Management
+                </h3>
+                <div className="bg-muted/40 rounded-lg p-4 font-mono text-sm space-y-2">
+                  <div>
+                    <span className="text-muted-foreground">
+                      # Add a new word to your vocabulary
+                    </span>
+                  </div>
+                  <div>$ ./vocab-cli add --word=précis --pos=noun \</div>
+                  <div> --definition="a summary or abstract of a text" \</div>
+                  <div> --example="You can read a brief precis here."</div>
+                  <div className="mt-3">
+                    <span className="text-muted-foreground">
+                      # Remove a word from your vocabulary
+                    </span>
+                  </div>
+                  <div>$ ./vocab-cli remove --word=précis</div>
+                </div>
+              </div>
             </div>
           </CardContent>
         </Card>
@@ -254,6 +295,13 @@ export default function VocabularyStudyGoCliPage() {
                     Interactive terminal interface with user input handling
                   </li>
                   <li>State management for tracking learning progress</li>
+                  <li>
+                    Dynamic vocabulary management with add/remove commands
+                  </li>
+                  <li>
+                    Comprehensive word metadata support (POS, definitions,
+                    examples)
+                  </li>
                   <li>Makefile for easy building and distribution</li>
                 </ul>
               </div>

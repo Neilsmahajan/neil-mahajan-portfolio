@@ -69,19 +69,39 @@ export default function VocabularyStudyGoCliPage() {
               <span className="text-sm font-medium">Terminal</span>
             </div>
             <div className="font-mono text-sm space-y-2">
-              <div className="text-muted-foreground">$ ./vocab-cli</div>
+              <div className="text-muted-foreground">
+                $ <span className="text-green-600">./vocab</span>
+              </div>
+              <div className="text-cyan-600">
+                📚 Vocabulary Study Session
+                <br />
+                ────────────────────────────────────────
+                <br />
+              </div>
+              <div className="text-muted-foreground">Card 1 of 1000</div>
+              <div className="text-pink-400">
+                <br />
+                🔷 patent
+              </div>
+              <div className="text-muted-foreground">
+                Part of Speech:{" "}
+                <span className="text-orange-300">adjective</span>
+              </div>
+              <div className="text-cyan-600">
+                Press [q]uit to exit or [Enter] to flip the card...
+                <br />
+                ────────────────────────────────────────
+                <br />
+              </div>
+              <div className="text-blue-600">📖 glaringly obvious</div>
               <div className="text-green-600">
-                Starting vocabulary study session...
+                💬 Since the book had been through no fewer than six proof runs,
+                the staff was shocked to see such a patent spelling mistake
+                remaining, right in the middle of the front cover!
+                <br />
               </div>
-              <div className="text-blue-600">Word: perspicacious</div>
-              <div className="text-muted-foreground">
-                Press Enter to reveal definition...
-              </div>
-              <div className="text-yellow-600">
-                Definition: Having keen insight or discernment
-              </div>
-              <div className="text-muted-foreground">
-                Do you know this word? (y/n):{" "}
+              <div className="text-cyan-600">
+                Did you know this word? [y]es / [n]o / [q]uit:
               </div>
             </div>
           </div>
@@ -177,19 +197,26 @@ export default function VocabularyStudyGoCliPage() {
                       # Start a study session
                     </span>
                   </div>
-                  <div>$ ./vocab-cli</div>
+                  <div>
+                    $ <span className="text-green-600">./vocab</span>
+                  </div>
                   <div className="mt-3">
                     <span className="text-muted-foreground">
                       # Limit session to 10 words
                     </span>
                   </div>
-                  <div>$ ./vocab-cli --limit=10</div>
+                  <div>
+                    $ <span className="text-green-600">./vocab</span> --limit=10
+                  </div>
                   <div className="mt-3">
                     <span className="text-muted-foreground">
                       # Study only unknown words
                     </span>
                   </div>
-                  <div>$ ./vocab-cli --review=unknown</div>
+                  <div>
+                    $ <span className="text-green-600">./vocab</span>{" "}
+                    --review=unknown
+                  </div>
                 </div>
               </div>
 
@@ -203,19 +230,25 @@ export default function VocabularyStudyGoCliPage() {
                       # View learning statistics
                     </span>
                   </div>
-                  <div>$ ./vocab-cli stats</div>
+                  <div>
+                    $ <span className="text-green-600">./vocab</span> stats
+                  </div>
                   <div className="mt-3">
                     <span className="text-muted-foreground">
                       # Reset all progress
                     </span>
                   </div>
-                  <div>$ ./vocab-cli reset</div>
+                  <div>
+                    $ <span className="text-green-600">./vocab</span> reset
+                  </div>
                   <div className="mt-3">
                     <span className="text-muted-foreground">
                       # Show help information
                     </span>
                   </div>
-                  <div>$ ./vocab-cli --help</div>
+                  <div>
+                    $ <span className="text-green-600">./vocab</span> --help
+                  </div>
                 </div>
               </div>
 
@@ -229,15 +262,28 @@ export default function VocabularyStudyGoCliPage() {
                       # Add a new word to your vocabulary
                     </span>
                   </div>
-                  <div>$ ./vocab-cli add --word=précis --pos=noun \</div>
-                  <div> --definition="a summary or abstract of a text" \</div>
-                  <div> --example="You can read a brief precis here."</div>
+                  <div>
+                    $ <span className="text-green-600">./vocab</span> add
+                    --word=précis --pos=noun \<br />
+                    --definition=
+                    <span className="text-yellow-600">
+                      "a summary or abstract of a text"
+                    </span>{" "}
+                    \<br />
+                    --example=
+                    <span className="text-yellow-600">
+                      "You can read a brief precis here."
+                    </span>
+                  </div>
                   <div className="mt-3">
                     <span className="text-muted-foreground">
                       # Remove a word from your vocabulary
                     </span>
                   </div>
-                  <div>$ ./vocab-cli remove --word=précis</div>
+                  <div>
+                    $ <span className="text-green-600">./vocab</span> remove
+                    --word=précis
+                  </div>
                 </div>
               </div>
             </div>
@@ -350,7 +396,124 @@ export default function VocabularyStudyGoCliPage() {
                       # Start studying!
                     </span>
                   </div>
-                  <div>$ ./vocab-cli</div>
+                  <div>
+                    $ <span className="text-green-600">./vocab</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardContent className="pt-6">
+            <h2 className="text-2xl font-bold mb-4">Terminal Screenshots</h2>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              <div className="relative w-full bg-muted/40 rounded-lg p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <Terminal className="h-5 w-5" />
+                  <span className="text-sm font-medium">Terminal</span>
+                </div>
+                <div className="font-mono text-sm space-y-2">
+                  <div className="text-muted-foreground">
+                    $ <span className="text-green-600">./vocab</span> stats
+                  </div>
+                  <div className="text-cyan-600">
+                    📊 Vocabulary Stats
+                    <br />
+                    ────────────────────────────────────────
+                  </div>
+                  <div className="text-muted-foreground">
+                    Total words: 1000
+                    <br />
+                    Known: <span className="text-green-600">0</span>
+                    <br />
+                    Unknown: <span className="text-red-600">0</span>
+                    <br />
+                    Unseen: <span className="text-yellow-600">1000</span>
+                  </div>
+                  <br />
+                  <div className="text-gray-600">
+                    💡 <span className="text-blue-600">Progress:</span> 0.0%
+                    [░░░░░░░░░░░░░░░░░░░░]
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative w-full bg-muted/40 rounded-lg p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <Terminal className="h-5 w-5" />
+                  <span className="text-sm font-medium">Terminal</span>
+                </div>
+                <div className="font-mono text-sm space-y-2">
+                  <div className="text-muted-foreground">
+                    $ <span className="text-green-600">./vocab</span> add
+                    --word=précis --pos=noun \<br />
+                    --definition=
+                    <span className="text-yellow-600">
+                      "a summary or abstract of a text"
+                    </span>{" "}
+                    \<br />
+                    --example=
+                    <span className="text-yellow-600">
+                      "You can read a brief precis here."
+                    </span>
+                  </div>
+                  <div className="text-cyan-600">
+                    📚 Adding New Word
+                    <br />
+                    ─────────────────────────────────────────
+                  </div>
+                  <div className="text-muted-foreground">
+                    Word: <span className="text-pink-300">précis</span>
+                    <br />
+                    Part of speech:{" "}
+                    <span className="text-yellow-600">noun</span>
+                    <br />
+                    Definition:{" "}
+                    <span className="text-blue-600">
+                      a summary or abstract of a text
+                    </span>
+                    <br />
+                    Example:{" "}
+                    <span className="text-green-600">
+                      You can read a brief precis here.
+                    </span>
+                    <br />
+                    <br />
+                    Saving vocab word précis to vocab.json
+                  </div>
+                  <div className="text-green-600">
+                    ✅ Added word 'précis' to vocab
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative w-full bg-muted/40 rounded-lg p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <Terminal className="h-5 w-5" />
+                  <span className="text-sm font-medium">Terminal</span>
+                </div>
+                <div className="font-mono text-sm space-y-2">
+                  <div className="text-muted-foreground">
+                    $ <span className="text-green-600">./vocab</span> remove
+                    --word=précis
+                    <br />
+                  </div>
+                  <div className="text-cyan-600">
+                    📚 Removing Word
+                    <br />
+                    ────────────────────────────────────────
+                  </div>
+                  <div className="text-muted-foreground">
+                    Word to remove: <span className="text-red-600">précis</span>
+                    <br />
+                    <br />
+                    Deleting word précis from vocab
+                  </div>
+                  <div className="text-green-600">
+                    ✅ Removed word 'précis' from vocab
+                  </div>
                 </div>
               </div>
             </div>

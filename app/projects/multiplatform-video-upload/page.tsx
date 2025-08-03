@@ -32,9 +32,14 @@ export default function MultiplatformVideoUploadPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           {/* Project info */}
           <div>
-            <Badge variant="outline" className="text-xs mb-2">
-              Personal Project
-            </Badge>
+            <div className="flex flex-wrap items-center gap-2 mb-2">
+              <Badge variant="outline" className="text-xs">
+                Personal Project
+              </Badge>
+              <Badge variant="secondary" className="text-xs">
+                Mar 2025 - June 2025
+              </Badge>
+            </div>
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
               Multiplatform Video Upload
             </h1>

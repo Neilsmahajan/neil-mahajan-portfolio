@@ -45,6 +45,9 @@ export default function CustomAIChatbotPage() {
               <Badge variant="outline" className="text-xs flex items-center">
                 <Users className="mr-1 h-3 w-3" /> Team Project
               </Badge>
+              <Badge variant="secondary" className="text-xs">
+                Aug 2024 - May 2025
+              </Badge>
             </div>
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
               Custom AI Chatbot Avatar WordPress Plugin

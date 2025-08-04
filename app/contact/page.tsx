@@ -53,6 +53,19 @@ export default function ContactPage() {
         </div>
 
         <div className="rounded-lg border p-6">
+          <h2 className="text-lg font-semibold mb-2">X (Twitter)</h2>
+          <p className="text-muted-foreground mb-2">Follow me on X</p>
+          <Link
+            href="https://x.com/neilsmahajan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            x.com/neilsmahajan
+          </Link>
+        </div>
+
+        <div className="rounded-lg border p-6">
           <h2 className="text-lg font-semibold mb-2">GitHub</h2>
           <p className="text-muted-foreground mb-2">Check out my code</p>
           <Link

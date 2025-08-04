@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 export function Footer() {
   return (
@@ -17,6 +17,15 @@ export function Footer() {
             aria-label="LinkedIn Profile"
           >
             <Linkedin className="h-5 w-5" />
+          </Link>
+          <Link
+            href="https://x.com/neilsmahajan"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-full hover:bg-muted transition-colors"
+            aria-label="X Profile"
+          >
+            <Twitter className="h-5 w-5" />
           </Link>
           <Link
             href="https://github.com/neilsmahajan"

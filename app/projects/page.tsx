@@ -44,6 +44,13 @@ export default function ProjectsPage() {
       tags: ["Go", "Goroutines", "Concurrency", "Terminal UI", "CLI"],
       link: "/projects/snake",
     },
+    {
+      title: "Repfire - Workout Tracker",
+      description:
+        "A modern, cross-platform workout tracking mobile app built with React Native and Expo. Track your workouts, monitor your progress, and stay motivated on your fitness journey.",
+      tags: ["React Native", "Expo", "TypeScript", "Mobile App", "iOS"],
+      link: "/projects/repfire",
+    },
   ];
 
   return (

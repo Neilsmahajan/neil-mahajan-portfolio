@@ -14,6 +14,7 @@ export default function ProjectsPage() {
       description:
         "A unified web platform designed to resolve the fragmentation of digital advertising analytics across major platforms such as Google, Meta, and Microsoft.",
       tags: ["Next.js", "TypeScript", "OAuth", "API Integration", "PostgreSQL"],
+      date: "Aug 2024 - May 2025",
       link: "/projects/advertising-analytics-dashboard",
     },
     {
@@ -21,6 +22,7 @@ export default function ProjectsPage() {
       description:
         "A service that quickly creates customized conversational AI chatbots for clients, including personalized knowledge bases, predefined questions, and multilingual support.",
       tags: ["PHP", "Docker", "OpenAI API", "Google Cloud", "WordPress"],
+      date: "Aug 2024 - May 2025",
       link: "/projects/custom-ai-chatbot",
     },
     {
@@ -28,6 +30,7 @@ export default function ProjectsPage() {
       description:
         "A Next.js 15 UI for OAuth-based one-click uploads of short-form videos to YouTube Shorts, Instagram Reels, and TikTok.",
       tags: ["Next.js", "React", "OAuth", "API Integration"],
+      date: "Mar 2025 - June 2025",
       link: "/projects/multiplatform-video-upload",
     },
     {
@@ -35,6 +38,7 @@ export default function ProjectsPage() {
       description:
         "A command-line interface tool built with Go to help study and learn new vocabulary through interactive flashcard sessions with progress tracking and spaced repetition.",
       tags: ["Go", "CLI", "Flashcards", "Progress Tracking", "JSON"],
+      date: "July 2025",
       link: "/projects/vocabulary-study-go-cli",
     },
     {
@@ -42,13 +46,23 @@ export default function ProjectsPage() {
       description:
         "A high-performance, terminal-based Snake game implementation written in Go, showcasing advanced concurrency patterns, data structures, and clean architecture principles.",
       tags: ["Go", "Goroutines", "Concurrency", "Terminal UI", "CLI"],
+      date: "July 2025",
       link: "/projects/snake",
+    },
+    {
+      title: "Project Tree Markdown CLI",
+      description:
+        "A simple CLI tool written in Go that generates Markdown-formatted tree structures of any directory. Perfect for creating README documentation that shows your project structure.",
+      tags: ["Go", "CLI", "Markdown", "Documentation", "Tree Structure"],
+      date: "August 2025",
+      link: "/projects/project-tree-md",
     },
     {
       title: "Repfire - Workout Tracker",
       description:
         "A modern, cross-platform workout tracking mobile app built with React Native and Expo. Track your workouts, monitor your progress, and stay motivated on your fitness journey.",
       tags: ["React Native", "Expo", "TypeScript", "Mobile App", "iOS"],
+      date: "Jul 2025 - Aug 2025",
       link: "/projects/repfire",
     },
   ];
@@ -68,7 +82,12 @@ export default function ProjectsPage() {
             className="rounded-lg border bg-card text-card-foreground shadow-sm"
           >
             <div className="p-6">
-              <h3 className="text-lg font-semibold">{project.title}</h3>
+              <div className="flex items-center justify-between mb-2">
+                <h3 className="text-lg font-semibold">{project.title}</h3>
+                <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
+                  {project.date}
+                </span>
+              </div>
               <p className="text-sm text-muted-foreground mt-2">
                 {project.description}
               </p>

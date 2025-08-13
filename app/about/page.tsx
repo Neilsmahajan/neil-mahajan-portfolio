@@ -48,16 +48,22 @@ export default function AboutPage() {
           <h3 className="text-xl font-semibold">
             Arizona State University (Barrett, The Honors College)
           </h3>
+          <p className="text-lg">
+            <em>Tempe, AZ</em>
+          </p>
           <p className="text-muted-foreground mb-2">August 2022 to May 2025</p>
           <ul className="list-disc pl-5 space-y-1">
             <li>Bachelor of Science – BS, Computer Science</li>
-            <li>GPA: 3.71, Major GPA: 3.73</li>
+            <li>GPA: 3.7</li>
             <li>Graduated in 3 years Magna Cum Laude with Honors</li>
           </ul>
         </div>
 
         <div className="rounded-lg border p-6">
           <h3 className="text-xl font-semibold">Basis Scottsdale</h3>
+          <p className="text-lg">
+            <em>Scottsdale, AZ</em>
+          </p>
           <p className="text-muted-foreground mb-2">August 2015 to May 2022</p>
           <ul className="list-disc pl-5">
             <li>Completed 17 AP Courses in 4 Years</li>
@@ -150,11 +156,34 @@ export default function AboutPage() {
         <h2 className="text-2xl font-bold mb-6">Work Experience</h2>
 
         <div className="rounded-lg border p-6 mb-4">
+          <h3 className="text-xl font-semibold">Software Engineer 2</h3>
+          <p className="text-lg">
+            BlueXP, NetApp – <em>Durham, NC</em>
+          </p>
+          <p className="text-muted-foreground mb-2">August 2025 to Present</p>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              Develop and enhance features for BlueXP, NetApp’s unified console
+              and API for seamless storage and data service management across
+              on-premises and cloud environments (AWS, Azure, GCP).
+            </li>
+            <li>
+              Contribute to the full software development lifecycle using
+              Node.js, Go, TypeScript, and REST APIs; integrate with
+              Docker/Kubernetes in Linux to optimize scalability and
+              reliability.
+            </li>
+          </ul>
+        </div>
+
+        <div className="rounded-lg border p-6 mb-4">
           <h3 className="text-xl font-semibold">
             IT Solutions Engineer / Analyst I
           </h3>
-          <p className="text-lg">Arizona Public Service</p>
-          <p className="text-muted-foreground mb-2">May 2025 to Present</p>
+          <p className="text-lg">
+            Arizona Public Service – <em>Phoenix, AZ</em>
+          </p>
+          <p className="text-muted-foreground mb-2">May 2025 to August 2025</p>
           <ul className="list-disc pl-5 space-y-1">
             <li>
               Collaborate with stakeholders to deliver and maintain IT solutions
@@ -170,7 +199,9 @@ export default function AboutPage() {
 
         <div className="rounded-lg border p-6 mb-4">
           <h3 className="text-xl font-semibold">IT/Database Intern</h3>
-          <p className="text-lg">Arizona Public Service</p>
+          <p className="text-lg">
+            Arizona Public Service – <em>Phoenix, AZ</em>
+          </p>
           <p className="text-muted-foreground mb-2">May 2023 to May 2025</p>
           <ul className="list-disc pl-5 space-y-1">
             <li>
@@ -205,7 +236,9 @@ export default function AboutPage() {
 
         <div className="rounded-lg border p-6 mb-4">
           <h3 className="text-xl font-semibold">Coding Instructor</h3>
-          <p className="text-lg">Code Ninjas</p>
+          <p className="text-lg">
+            Code Ninjas – <em>Scottsdale, AZ</em>
+          </p>
           <p className="text-muted-foreground mb-2">
             March 2022 to September 2022
           </p>

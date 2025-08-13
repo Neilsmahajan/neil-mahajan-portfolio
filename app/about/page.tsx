@@ -24,12 +24,19 @@ export default function AboutPage() {
         <div className="flex-grow">
           <h1 className="text-3xl font-bold mb-4">About Me</h1>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            I&apos;m a Computer Science graduate from Arizona State University
-            (Barrett, The Honors College) with experience in full-stack
-            development, AI integration, and cloud solutions. Currently working
-            as an IT Solutions Engineer at Arizona Public Service, I&apos;m
-            passionate about creating innovative solutions that bridge
-            technology and real-world applications.
+            I&apos;m a <b>Software Engineer 2</b> at <b>NetApp</b>&apos;s RTP
+            campus in Durham, NC, working on the <b>BlueXP</b> team to deliver
+            scalable, cloud-integrated solutions for unified data and storage
+            management. I’m a graduate of{" "}
+            <b>Arizona State University (Barrett, The Honors College)</b>, where
+            I earned my BS in <b>Computer Science</b> in just three years (Magna
+            Cum Laude).
+            <br />
+            <br />
+            My background spans full-stack development, AI integration, cloud
+            architecture, and automation, with professional experience at{" "}
+            <b>Arizona Public Service</b> designing enterprise applications and
+            streamlining operations through custom automation scripts.
           </p>
         </div>
       </div>

@@ -51,10 +51,13 @@ export default function Home() {
             About Me
           </h2>
           <p className="text-muted-foreground">
-            I&apos;m a Computer Science graduate from Arizona State University
-            (Barrett, The Honors College) with experience in full-stack
-            development, AI integration, and cloud solutions. Currently working
-            as an IT Solutions Engineer at Arizona Public Service.
+            I&apos;m a <b>Software Engineer 2</b> at <b>NetApp</b>&apos;s RTP
+            campus in Durham, NC, working on the <b>BlueXP</b> team to deliver
+            scalable, cloud-integrated solutions for unified data and storage
+            management. I’m a graduate of{" "}
+            <b>Arizona State University (Barrett, The Honors College)</b>, where
+            I earned my BS in <b>Computer Science</b> in just three years (Magna
+            Cum Laude).
           </p>
           <div>
             <Link href="/about" className="text-primary hover:underline">

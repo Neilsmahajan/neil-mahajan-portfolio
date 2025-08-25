@@ -24,7 +24,7 @@ export default function AboutPage() {
         <div className="flex-grow">
           <h1 className="text-3xl font-bold mb-4">About Me</h1>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            I&apos;m a <b>Software Engineer 2</b> at <b>NetApp</b>&apos;s RTP
+            I&apos;m a <b>Software Engineer</b> at <b>NetApp</b>&apos;s RTP
             campus in Durham, NC, working on the <b>BlueXP</b> team to deliver
             scalable, cloud-integrated solutions for unified data and storage
             management. I’m a graduate of{" "}
@@ -85,6 +85,7 @@ export default function AboutPage() {
               "C++",
               "C#",
               "SQL",
+              "MongoDB",
               "HTML/CSS",
               "Go",
               "PHP",
@@ -156,7 +157,7 @@ export default function AboutPage() {
         <h2 className="text-2xl font-bold mb-6">Work Experience</h2>
 
         <div className="rounded-lg border p-6 mb-4">
-          <h3 className="text-xl font-semibold">Software Engineer 2</h3>
+          <h3 className="text-xl font-semibold">Software Engineer</h3>
           <p className="text-lg">
             BlueXP, NetApp – <em>Durham, NC</em>
           </p>

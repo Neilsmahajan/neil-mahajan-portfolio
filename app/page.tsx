@@ -51,7 +51,7 @@ export default function Home() {
             About Me
           </h2>
           <p className="text-muted-foreground">
-            I&apos;m a <b>Software Engineer 2</b> at <b>NetApp</b>&apos;s RTP
+            I&apos;m a <b>Software Engineer</b> at <b>NetApp</b>&apos;s RTP
             campus in Durham, NC, working on the <b>BlueXP</b> team to deliver
             scalable, cloud-integrated solutions for unified data and storage
             management. I’m a graduate of{" "}

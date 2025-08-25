@@ -77,6 +77,19 @@ export default function ContactPage() {
             github.com/neilsmahajan
           </Link>
         </div>
+
+        <div className="rounded-lg border p-6">
+          <h2 className="text-lg font-semibold mb-2">Links</h2>
+          <p className="text-muted-foreground mb-2">All of my links</p>
+          <Link
+            href="https://links.neilsmahajan.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary hover:underline"
+          >
+            links.neilsmahajan
+          </Link>
+        </div>
       </div>
     </div>
   );

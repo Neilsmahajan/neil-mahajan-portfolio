@@ -25,6 +25,14 @@ export default function ProjectsPage() {
       link: "/projects/spotify-to-ytmusic",
     },
     {
+      title: "Checkers (Draughts) Game",
+      description:
+        "A terminal-based American Checkers game written in Go featuring turn-based play, multi-jump sequences, forced captures, piece promotion, and win detection with a clean CLI interface.",
+      tags: ["Go", "CLI", "Game Development", "Terminal UI", "Board Game"],
+      date: "August 2025",
+      link: "/projects/checkers",
+    },
+    {
       title: "Advertising Analytics Dashboard",
       description:
         "A unified web platform designed to resolve the fragmentation of digital advertising analytics across major platforms such as Google, Meta, and Microsoft.",

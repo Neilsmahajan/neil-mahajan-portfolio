@@ -10,6 +10,21 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   const projects = [
     {
+      title: "Spotify to YouTube Music Migration",
+      description:
+        "A two-part tool that exports liked songs from Spotify using Go and automatically likes them on YouTube Music using Python, providing a free alternative to paid migration services.",
+      tags: [
+        "Go",
+        "Python",
+        "Spotify API",
+        "YouTube Music API",
+        "JSON",
+        "OAuth",
+      ],
+      date: "September 2025",
+      link: "/projects/spotify-to-ytmusic",
+    },
+    {
       title: "Advertising Analytics Dashboard",
       description:
         "A unified web platform designed to resolve the fragmentation of digital advertising analytics across major platforms such as Google, Meta, and Microsoft.",

@@ -105,7 +105,7 @@ export default function CheckersPage() {
                 <div className="text-grey-600">  +----+----+----+----+----+----+----+----+</div>
               </div>
               <div className="text-grey-600">Checkers CLI</div>
-              <div className="text-grey-600">Input start and end position in format &lt;Start Row&gt;&lt;Start Column&gt;&lt;End Row&gt;&lt;End Column&gt; (e.g. C1D2)</div>
+              <div className="text-grey-600">Input start and end position in format &lt;Start Row&gt;&lt;Start Column&gt;&lt;End Row&gt;<br/>&lt;End Column&gt; (e.g. C1D2)</div>
               <div className="text-grey-600">To jump multiple pieces, chain positions (e.g. C1E3G5). Use Q to quit.</div>
             </div>
           </div>
@@ -427,10 +427,11 @@ make build   # or: go build -o bin/checkers ./cmd/checkers
             <p className="mb-4">
               Here's what a typical game session looks like (multi-jump chain):
             </p>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="relative w-full bg-muted/40 rounded-lg p-6">
             <div className="flex items-center gap-2 mb-4">
               <Terminal className="h-5 w-5" />
-              <span className="text-sm font-medium">Terminal</span>
+              <span className="text-sm font-medium">Black's Turn Forced to Capture</span>
             </div>
             <div className="font-mono text-sm space-y-2 whitespace-pre">
               <div className="text-grey-600">It's Black's Turn</div>
@@ -464,7 +465,7 @@ make build   # or: go build -o bin/checkers ./cmd/checkers
             <div className="relative w-full bg-muted/40 rounded-lg p-6">
             <div className="flex items-center gap-2 mb-4">
               <Terminal className="h-5 w-5" />
-              <span className="text-sm font-medium">Terminal</span>
+              <span className="text-sm font-medium">Red's Turn Double Capture</span>
             </div>
             <div className="font-mono text-sm space-y-2 whitespace-pre">
               <div className="text-grey-600">It's Red's Turn</div>
@@ -493,6 +494,7 @@ make build   # or: go build -o bin/checkers ./cmd/checkers
               </div>
               <div className="text-grey-600">It's Black's Turn</div>
             </div>
+          </div>
           </div>
             <div className="mt-4">
               <Button variant="outline" asChild>

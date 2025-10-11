@@ -1,3 +1,4 @@
 # Exclude specific project pages from Prettier formatting
 app/projects/snake/page.tsx
 app/projects/checkers/page.tsx
+app/projects/typing-test-tui/page.tsx

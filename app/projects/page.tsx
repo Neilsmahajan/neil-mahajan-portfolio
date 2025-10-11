@@ -10,6 +10,22 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   const projects = [
     {
+      title: "Typing Test TUI",
+      description:
+        "A Monkeytype-inspired terminal typing trainer built with Go, Cobra, Bubble Tea, and Lip Gloss that provides multilingual datasets, analytics, and configurable practice modes.",
+      tags: [
+        "Go",
+        "Cobra",
+        "Bubble Tea",
+        "Lip Gloss",
+        "Terminal UI",
+        "CLI",
+        "Spaced Repetition",
+      ],
+      date: "October 2025",
+      link: "/projects/typing-test-tui",
+    },
+    {
       title: "Spotify to YouTube Music Migration",
       description:
         "A two-part tool that exports liked songs from Spotify using Go and automatically likes them on YouTube Music using Python, providing a free alternative to paid migration services.",

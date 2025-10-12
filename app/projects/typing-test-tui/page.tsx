@@ -105,13 +105,13 @@ export default function TypingTestTuiPage() {
             </div>
             <div className="font-mono text-sm space-y-2 whitespace-pre">
               <div className="text-muted-foreground">
-                $ <span className="text-green-500">typing-test-tui</span> --mode quote --language code_go
+                $ <span className="text-green-500">typing-test-tui</span> --mode quote --language english
               </div>
               <div className="text-pink-500">
                 Quote Mode
               </div>
               <div className="text-muted-foreground">
-                Language: Go · 25 words · 142 chars
+                Language: English · 16 words · 85 chars
               </div>
               <div className="space-y-0 leading-none">
                 <div className="text-blue-500">╭────────────────────────────────────────────</div>
@@ -331,10 +331,10 @@ export default function TypingTestTuiPage() {
                 <p className="font-medium text-foreground">
                   Recommended Workflow
                 </p>
-                <p>
-                  Use <code>make run</code> with <code>ARGS</code> to iterate on
-                  new datasets, and run <code>make test</code> plus
-                  <code>make lint</code> before contributing.
+                <p className="text-sm text-muted-foreground">
+                  Use <code className="bg-muted px-1.5 py-0.5 rounded text-xs font-mono">make run</code> with <code className="bg-muted px-1.5 py-0.5 rounded text-xs font-mono">ARGS</code> to iterate on
+                  new datasets, and run <code className="bg-muted px-1.5 py-0.5 rounded text-xs font-mono">make test</code> plus{" "}
+                  <code className="bg-muted px-1.5 py-0.5 rounded text-xs font-mono">make lint</code> before contributing.
                 </p>
               </div>
             </div>
@@ -346,7 +346,7 @@ export default function TypingTestTuiPage() {
             <h2 className="text-2xl font-bold mb-4">Performance & Results</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
               <div className="bg-muted/40 rounded-lg p-4">
-                <p className="text-3xl font-bold text-primary">100+</p>
+                <p className="text-3xl font-bold text-primary">20+</p>
                 <p className="text-sm text-muted-foreground">
                   Curated code and language datasets
                 </p>
@@ -358,10 +358,59 @@ export default function TypingTestTuiPage() {
                 </p>
               </div>
               <div className="bg-muted/40 rounded-lg p-4">
-                <p className="text-3xl font-bold text-primary">~105 WPM</p>
+                <p className="text-3xl font-bold text-primary">~90 WPM</p>
                 <p className="text-sm text-muted-foreground">
                   Personal best sustained over a week of testing
                 </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="mb-8">
+          <CardContent className="pt-6">
+            <h2 className="text-2xl font-bold mb-4">Terminal Walkthrough</h2>
+            <div className="relative w-full bg-muted/40 rounded-lg p-6">
+              <div className="flex items-center gap-2 mb-4">
+                <Terminal className="h-5 w-5" />
+                <span className="text-sm font-medium">Terminal</span>
+              </div>
+              <div className="font-mono text-sm space-y-2 whitespace-pre">
+                <div className="text-muted-foreground">
+                  $ <span className="text-green-500">typing-test-tui</span> --mode words --language english --word-count 50 --include-punctuation --include-numbers
+                </div>
+                <div className="text-pink-500">
+                  Words Mode
+                </div>
+                <div className="text-muted-foreground">
+                  Language: English · target 50 words · 287 chars
+
+                </div>
+                <div className="space-y-0 leading-none">
+                  <div className="text-blue-500">╭─────────────────────────────────────────────────────────────────────────────────────────────────────────────────</div>
+                  <div className="text-blue-500">─╮</div>
+                  <div className="text-blue-500">│</div>
+                  <div className="text-blue-500">│</div>
+                  <div className="text-blue-500">│<span className="text-green-600">  More: consider, should take, but then around much against </span><span className="text-muted-foreground"><span className="bg-pink-300">d</span>own early, as word. Help place, to large never in</span></div>
+                  <div className="text-blue-500">│</div>
+                  <div className="text-blue-500">│<span className="text-muted-foreground">  will. Against these, against during use if what about "head" much. First good 367 program 547, of general</span></div>
+                  <div className="text-blue-500">│</div>
+                  <div className="text-blue-500">│<span className="text-muted-foreground">  lead. Seem possible we 21 more while: those need end before eye through.</span></div>
+                  <div className="text-blue-500">│</div>
+                  <div className="text-blue-500">│</div>
+                  <div className="text-blue-500">╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────</div>
+                  <div className="text-blue-500">─╯</div>
+                </div>
+                <div className="text-muted-foreground">
+                  Progress            │ WPM   │ Time
+                </div>
+                <div className="text-pink-500">
+                  57/287 chars (20%)   36.9    00:14
+                </div>
+                <br />
+                <div className="bg-gray-800 text-white px-2 py-1 rounded inline-block">
+                    Esc: blur focus • Tab: finish test • Ctrl+C: exit
+                </div>
               </div>
             </div>
           </CardContent>

@@ -1,3 +1,15 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "overrides": [
+    {
+      "files": [
+        "app/projects/vocabulary-study-go-cli/page.tsx",
+        "app/projects/typing-test-tui/page.tsx",
+        "app/projects/snake/page.tsx"
+      ],
+      "rules": {
+        "react/jsx-no-comment-textnodes": "off"
+      }
+    }
+  ]
 }

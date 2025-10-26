@@ -10,6 +10,25 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   const projects = [
     {
+      title: "Watchlist Notify",
+      description:
+        "Track your personal movie & TV show watchlist across streaming platforms and automatically get email alerts when titles become available on the services you already subscribe to.",
+      tags: [
+        "Next.js",
+        "Go",
+        "Gin",
+        "MongoDB Atlas",
+        "Upstash Redis",
+        "Auth0",
+        "TMDb API",
+        "Postmark",
+        "Google Cloud Run",
+        "Docker",
+      ],
+      date: "Sept 2025 - Oct 2025",
+      link: "/projects/watchlist-notify",
+    },
+    {
       title: "Typing Test TUI",
       description:
         "A Monkeytype-inspired terminal typing trainer built with Go, Cobra, Bubble Tea, and Lip Gloss that provides multilingual datasets, analytics, and configurable practice modes.",

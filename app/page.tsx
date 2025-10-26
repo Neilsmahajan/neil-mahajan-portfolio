@@ -76,6 +76,22 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
               <div className="p-6">
+                <h3 className="text-lg font-semibold">Watchlist Notify</h3>
+                <p className="text-sm text-muted-foreground mt-2">
+                  Track your personal movie & TV show watchlist across streaming
+                  platforms and automatically get email alerts when titles
+                  become available on your subscribed services.
+                </p>
+                <Link
+                  href="/projects/watchlist-notify"
+                  className="text-primary text-sm mt-4 inline-block hover:underline"
+                >
+                  View Project
+                </Link>
+              </div>
+            </div>
+            <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
+              <div className="p-6">
                 <h3 className="text-lg font-semibold">
                   Advertising Analytics Dashboard
                 </h3>
@@ -104,24 +120,6 @@ export default function Home() {
                 </p>
                 <Link
                   href="/projects/custom-ai-chatbot"
-                  className="text-primary text-sm mt-4 inline-block hover:underline"
-                >
-                  View Project
-                </Link>
-              </div>
-            </div>
-            <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
-              <div className="p-6">
-                <h3 className="text-lg font-semibold">
-                  Multiplatform Video Upload
-                </h3>
-                <p className="text-sm text-muted-foreground mt-2">
-                  A Next.js 15 UI for OAuth-based one-click uploads of
-                  short-form videos to YouTube Shorts, Instagram Reels, and
-                  TikTok.
-                </p>
-                <Link
-                  href="/projects/multiplatform-video-upload"
                   className="text-primary text-sm mt-4 inline-block hover:underline"
                 >
                   View Project

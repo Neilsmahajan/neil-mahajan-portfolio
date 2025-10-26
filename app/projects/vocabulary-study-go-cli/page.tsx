@@ -272,12 +272,12 @@ export default function VocabularyStudyGoCliPage() {
                     --word=précis --pos=noun \<br />
                     --definition=
                     <span className="text-yellow-600">
-                      "a summary or abstract of a text"
+                      &quot;a summary or abstract of a text&quot;
                     </span>{" "}
                     \<br />
                     --example=
                     <span className="text-yellow-600">
-                      "You can read a brief precis here."
+                      &quot;You can read a brief precis here.&quot;
                     </span>
                   </div>
                   <div className="mt-3">
@@ -456,12 +456,12 @@ export default function VocabularyStudyGoCliPage() {
                     --word=précis --pos=noun \<br />
                     --definition=
                     <span className="text-yellow-600">
-                      "a summary or abstract of a text"
+                      &quot;a summary or abstract of a text&quot;
                     </span>{" "}
                     \<br />
                     --example=
                     <span className="text-yellow-600">
-                      "You can read a brief precis here."
+                      &quot;You can read a brief precis here.&quot;
                     </span>
                   </div>
                   <div className="text-cyan-600">
@@ -489,7 +489,7 @@ export default function VocabularyStudyGoCliPage() {
                     Saving vocab word précis to vocab.json
                   </div>
                   <div className="text-green-600">
-                    ✅ Added word 'précis' to vocab
+                    ✅ Added word &apos;précis&apos; to vocab
                   </div>
                 </div>
               </div>
@@ -517,7 +517,7 @@ export default function VocabularyStudyGoCliPage() {
                     Deleting word précis from vocab
                   </div>
                   <div className="text-green-600">
-                    ✅ Removed word 'précis' from vocab
+                    ✅ Removed word &apos;précis&apos; from vocab
                   </div>
                 </div>
               </div>

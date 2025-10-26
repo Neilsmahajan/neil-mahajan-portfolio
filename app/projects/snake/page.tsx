@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -27,9 +26,7 @@ export default function SnakeGamePage() {
   return (
     <div className="container py-12">
       <div className="flex flex-col gap-6">
-        {/* Hero section with responsive layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          {/* Project info */}
           <div>
             <div className="flex flex-wrap items-center gap-2 mb-2">
               <Badge variant="outline" className="text-xs">
@@ -555,7 +552,7 @@ export default function SnakeGamePage() {
                 <br />
                 <div className="text-sm text-yellow-600">🏆 Final Score: <span className="text-green-600">6</span></div>
                 <br />
-                <div className="text-sm text-pink-600">🎮 Keep trying! You'll get better! 🎮</div>
+                <div className="text-sm text-pink-600">🎮 Keep trying! You&apos;ll get better! 🎮</div>
                 <br />
                 <div className="text-sm text-cyan-600">Thanks for playing Snake! 🐍</div>
                 <div className="text-sm text-muted-foreground mt-4">Press <span className="text-green-600">ENTER</span> to exit...</div>

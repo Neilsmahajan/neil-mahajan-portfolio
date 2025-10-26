@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
-import { ViewFullSizeButton } from "@/components/view-full-size-button";
 
 export const metadata: Metadata = {
   title: "Watchlist Notify | Neil Mahajan",

@@ -9,7 +9,6 @@ import {
   Crown,
   Target,
   Zap,
-  Shield,
   Users,
   Trophy,
 } from "lucide-react";
@@ -130,7 +129,7 @@ export default function CheckersPage() {
               and intelligent input validation.
             </p>
             <p>
-              The project showcases practical application of Go's strengths in
+              The project showcases practical application of Go&apos;s strengths in
               CLI applications, including clean package structure, efficient
               algorithms for move validation, and user-friendly terminal
               interface design with Unicode piece representation.
@@ -425,16 +424,16 @@ make build   # or: go build -o bin/checkers ./cmd/checkers
           <CardContent className="pt-6">
             <h2 className="text-2xl font-bold mb-4">Game Session Example</h2>
             <p className="mb-4">
-              Here's what a typical game session looks like (multi-jump chain):
+              Here&apos;s what a typical game session looks like (multi-jump chain):
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div className="relative w-full bg-muted/40 rounded-lg p-6">
             <div className="flex items-center gap-2 mb-4">
               <Terminal className="h-5 w-5" />
-              <span className="text-sm font-medium">Black's Turn Forced to Capture</span>
+              <span className="text-sm font-medium">Black&apos;s Turn Forced to Capture</span>
             </div>
             <div className="font-mono text-sm space-y-2 whitespace-pre">
-              <div className="text-grey-600">It's Black's Turn</div>
+              <div className="text-grey-600">It&apos;s Black&apos;s Turn</div>
               <div className="text-grey-600">G1F2</div>
               <div className="text-grey-600">You must take a capture if one is available</div>
               <div className="text-grey-600">E3C5</div>
@@ -459,16 +458,16 @@ make build   # or: go build -o bin/checkers ./cmd/checkers
                 <div className="text-grey-600">H |    | ⚫️ |    | ⚫️ |    | ⚫️ |    | ⚫️ |</div>
                 <div className="text-grey-600">  +----+----+----+----+----+----+----+----+</div>
               </div>
-              <div className="text-grey-600">It's Red's Turn</div>
+              <div className="text-grey-600">It&apos;s Red&apos;s Turn</div>
             </div>
           </div>
             <div className="relative w-full bg-muted/40 rounded-lg p-6">
             <div className="flex items-center gap-2 mb-4">
               <Terminal className="h-5 w-5" />
-              <span className="text-sm font-medium">Red's Turn Double Capture</span>
+              <span className="text-sm font-medium">Red&apos;s Turn Double Capture</span>
             </div>
             <div className="font-mono text-sm space-y-2 whitespace-pre">
-              <div className="text-grey-600">It's Red's Turn</div>
+              <div className="text-grey-600">It&apos;s Red&apos;s Turn</div>
               <div className="text-grey-600">B6D4F6</div>
               <div className="text-grey-600">Move from B6 to D4</div>
               <div className="text-grey-600">Move from D4 to F6</div>
@@ -492,7 +491,7 @@ make build   # or: go build -o bin/checkers ./cmd/checkers
                 <div className="text-grey-600">H |    | ⚫️ |    | ⚫️ |    | ⚫️ |    | ⚫️ |</div>
                 <div className="text-grey-600">  +----+----+----+----+----+----+----+----+</div>
               </div>
-              <div className="text-grey-600">It's Black's Turn</div>
+              <div className="text-grey-600">It&apos;s Black&apos;s Turn</div>
             </div>
           </div>
           </div>

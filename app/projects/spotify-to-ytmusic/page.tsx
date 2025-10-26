@@ -5,8 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Github,
-  ExternalLink,
-  Music,
   Download,
   Upload,
   Zap,
@@ -322,7 +320,7 @@ SPOTIFY_SECRET=your_spotify_client_secret`}
                 <div className="space-y-2 text-sm">
                   <p>1. Open YouTube Music in Chrome while logged in</p>
                   <p>2. Open DevTools → Network tab, refresh page</p>
-                  <p>3. Filter by "player" and copy request headers</p>
+                  <p>3. Filter by &quot;player&quot; and copy request headers</p>
                   <p>
                     4. Save headers to{" "}
                     <code className="bg-muted px-2 py-1 rounded">

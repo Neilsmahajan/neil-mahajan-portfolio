@@ -124,7 +124,7 @@ export default function TypingTestTuiPage() {
                 <div className="text-blue-500">│</div>
                 <div className="text-blue-500">│<span className="text-green-600">  package main↵</span></div>
                 <div className="text-blue-500">│</div>
-                <div className="text-blue-500">│<span className="text-green-600">  import "fmt"↵</span></div>
+                <div className="text-blue-500">│<span className="text-green-600">  import &quot;fmt&quot;↵</span></div>
                 <div className="text-blue-500">│</div>
                 <div className="text-blue-500">│<span className="text-green-600">  ↵</span></div>
                 <div className="text-blue-500">│</div>
@@ -132,7 +132,7 @@ export default function TypingTestTuiPage() {
                 <div className="text-blue-500">│</div>
                 <div className="text-blue-500">│<span className="text-green-600">      for &#123;↵</span></div>
                 <div className="text-blue-500">│</div>
-                <div className="text-blue-500">│<span className="text-green-600">          fmt.Printf&#40;"GeeksforGeeks"&#41;↵</span></div>
+                <div className="text-blue-500">│<span className="text-green-600">          fmt.Printf&#40;&quot;GeeksforGeeks&quot;&#41;↵</span></div>
                 <div className="text-blue-500">│</div>
                 <div className="text-blue-500">│<span className="text-green-600">      &#125;↵</span></div>
                 <div className="text-blue-500">│</div>
@@ -393,7 +393,7 @@ export default function TypingTestTuiPage() {
                   <div className="text-blue-500">│</div>
                   <div className="text-blue-500">│<span className="text-green-600">  More: consider, should take, but then around much against </span><span className="text-muted-foreground"><span className="bg-pink-300">d</span>own early, as word. Help place, to large never in</span></div>
                   <div className="text-blue-500">│</div>
-                  <div className="text-blue-500">│<span className="text-muted-foreground">  will. Against these, against during use if what about "head" much. First good 367 program 547, of general</span></div>
+                  <div className="text-blue-500">│<span className="text-muted-foreground">  will. Against these, against during use if what about &quot;head&quot; much. First good 367 program 547, of general</span></div>
                   <div className="text-blue-500">│</div>
                   <div className="text-blue-500">│<span className="text-muted-foreground">  lead. Seem possible we 21 more while: those need end before eye through.</span></div>
                   <div className="text-blue-500">│</div>

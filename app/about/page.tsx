@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
-import Image from "next/image";
+import type { Metadata } from 'next'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: "About | Neil Mahajan",
+  title: 'About | Neil Mahajan',
   description:
-    "Learn about Neil Mahajan's education, skills, work experience, and awards.",
-};
+    'Learn about Neil Mahajan\'s education, skills, work experience, and awards.',
+}
 
-export default function AboutPage() {
+export default function AboutPage () {
   return (
     <div className="container py-12">
       <div className="flex flex-col md:flex-row gap-8 items-start mb-12">
@@ -25,16 +25,16 @@ export default function AboutPage() {
           <h1 className="text-3xl font-bold mb-4">About Me</h1>
           <p className="text-muted-foreground text-lg leading-relaxed">
             I&apos;m a <b>Software Engineer</b> at <b>NetApp</b>&apos;s RTP
-            campus in Durham, NC, working on the <b>BlueXP</b> team to deliver
-            scalable, cloud-integrated solutions for unified data and storage
-            management. I’m a graduate of{" "}
+            campus in Durham, NC, working on <b>The NetApp Console</b> backend API team to deliver
+            scalable, cloud-integrated microservice solutions for unified data and storage
+            management. I’m a graduate of{' '}
             <b>Arizona State University (Barrett, The Honors College)</b>, where
             I earned my BS in <b>Computer Science</b> in just three years (Magna
             Cum Laude).
-            <br />
-            <br />
+            <br/>
+            <br/>
             My background spans full-stack development, AI integration, cloud
-            architecture, and automation, with professional experience at{" "}
+            architecture, and automation, with professional experience at{' '}
             <b>Arizona Public Service</b> designing enterprise applications and
             streamlining operations through custom automation scripts.
           </p>
@@ -78,33 +78,33 @@ export default function AboutPage() {
           <h3 className="text-lg font-semibold mb-2">Languages</h3>
           <div className="flex flex-wrap gap-2">
             {[
-              "Python",
-              "Java",
-              "JavaScript",
-              "C",
-              "C++",
-              "C#",
-              "SQL",
-              "MongoDB",
-              "HTML/CSS",
-              "Go",
-              "PHP",
-              "Node.js",
-              "TypeScript",
-              "React",
-              "Next.js",
-              "ExpressJS",
-              "React Native",
-              "Expo",
-              "Tailwind CSS",
-              "Flask",
-              "Django",
-              "R",
-              "MATLAB",
-              "XML",
-              "Bash",
-              "Batch",
-              "PowerShell",
+              'Python',
+              'Java',
+              'JavaScript',
+              'C',
+              'C++',
+              'C#',
+              'SQL',
+              'MongoDB',
+              'HTML/CSS',
+              'Go',
+              'PHP',
+              'Node.js',
+              'TypeScript',
+              'React',
+              'Next.js',
+              'ExpressJS',
+              'React Native',
+              'Expo',
+              'Tailwind CSS',
+              'Flask',
+              'Django',
+              'R',
+              'MATLAB',
+              'XML',
+              'Bash',
+              'Batch',
+              'PowerShell',
             ].map((skill) => (
               <span
                 key={skill}
@@ -119,27 +119,32 @@ export default function AboutPage() {
           <h3 className="text-lg font-semibold mb-2">Technologies</h3>
           <div className="flex flex-wrap gap-2">
             {[
-              "Git/GitHub",
-              "AWS",
-              "Azure Cloud",
-              "GCP",
-              ".NET/WSDL",
-              "Vercel",
-              "Docker",
-              "ArcGIS",
-              "Unity",
-              "Linux/Unix",
-              "Visual Studio",
-              "Visual Studio Code",
-              "IntelliJ IDEA",
-              "Neovim",
-              "Postman",
-              "Figma",
-              "Jupyter Notebook",
-              "Power BI/Apps/Automate",
-              "WordPress",
-              "Firebase",
-              "Office Suite",
+              'Git/GitHub',
+              'AWS',
+              'Azure Cloud',
+              'GCP',
+              '.NET/WSDL',
+              'Docker',
+              'Kubernetes',
+              'ArcGIS',
+              'Unity',
+              'Linux/Unix',
+              'Visual Studio',
+              'Visual Studio Code',
+              'IntelliJ',
+              'Jira',
+              'Bitbucket',
+              'Confluence',
+              'Jenkins',
+              'Dynatrace',
+              'TeamCity',
+              'MongoDB',
+              'Figma',
+              'Jupyter Notebook',
+              'Power BI/Apps/Automate',
+              'WordPress',
+              'Firebase',
+              'Office Suite',
             ].map((skill) => (
               <span
                 key={skill}
@@ -268,5 +273,5 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

@@ -10,6 +10,23 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   const projects = [
     {
+      title: "Productivity Timer",
+      description:
+        "A productivity timer application built with Go, Gin, HTMX, Alpine.js, Templ, and MongoDB with OAuth authentication for tracking time spent on various tasks with custom tags and statistics.",
+      tags: [
+        "Go",
+        "Gin",
+        "HTMX",
+        "Alpine.js",
+        "Templ",
+        "MongoDB",
+        "OAuth",
+        "Railway",
+      ],
+      date: "December 2025",
+      link: "/projects/productivity-timer",
+    },
+    {
       title: "Watchlist Notify",
       description:
         "Track your personal movie & TV show watchlist across streaming platforms and automatically get email alerts when titles become available on the services you already subscribe to.",

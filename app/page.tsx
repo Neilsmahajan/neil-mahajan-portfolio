@@ -1,7 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link'
+import Image from 'next/image'
 
-export default function Home() {
+export default function Home () {
   return (
     <div className="flex flex-col gap-12 py-12">
       {/* Hero Section */}
@@ -52,9 +52,9 @@ export default function Home() {
           </h2>
           <p className="text-muted-foreground">
             I&apos;m a <b>Software Engineer</b> at <b>NetApp</b>&apos;s RTP
-            campus in Durham, NC, working on the <b>BlueXP</b> team to deliver
-            scalable, cloud-integrated solutions for unified data and storage
-            management. I’m a graduate of{" "}
+            campus in Durham, NC, working on <b>The NetApp Console</b> backend API team to deliver
+            scalable, cloud-integrated microservice solutions for unified data and storage
+            management. I’m a graduate of{' '}
             <b>Arizona State University (Barrett, The Honors College)</b>, where
             I earned my BS in <b>Computer Science</b> in just three years (Magna
             Cum Laude).
@@ -130,5 +130,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  );
+  )
 }

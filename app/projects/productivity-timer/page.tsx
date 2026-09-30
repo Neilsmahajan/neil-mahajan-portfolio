@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Productivity Timer | Neil Mahajan",
@@ -59,16 +59,6 @@ export default function ProductivityTimerPage() {
             <div className="flex flex-wrap gap-4 mb-8">
               <Button asChild>
                 <Link
-                  href="https://timer.neilsmahajan.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                  Live Demo
-                </Link>
-              </Button>
-              <Button variant="outline" asChild>
-                <Link
                   href="https://github.com/neilsmahajan/productivity-timer"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -114,8 +104,9 @@ export default function ProductivityTimerPage() {
               access with multiple provider support.
             </p>
             <p>
-              The application is deployed on Railway with continuous deployment
-              from the main branch, featuring comprehensive API documentation
+              The application was deployed on Railway with continuous deployment
+              from the main branch (the live demo is no longer hosted; the
+              source is on GitHub), featuring comprehensive API documentation
               via Swagger and a CI/CD pipeline using GitHub Actions for linting,
               testing, building, and security scanning.
             </p>

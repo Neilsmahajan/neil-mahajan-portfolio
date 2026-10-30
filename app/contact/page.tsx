@@ -29,17 +29,6 @@ export default function ContactPage() {
         </div>
 
         <div className="rounded-lg border p-6">
-          <h2 className="text-lg font-semibold mb-2">Phone</h2>
-          <p className="text-muted-foreground mb-2">Call or text</p>
-          <Link
-            href="tel:+16232354581"
-            className="text-primary hover:underline"
-          >
-            (623) 235-4581
-          </Link>
-        </div>
-
-        <div className="rounded-lg border p-6">
           <h2 className="text-lg font-semibold mb-2">LinkedIn</h2>
           <p className="text-muted-foreground mb-2">Connect professionally</p>
           <Link
